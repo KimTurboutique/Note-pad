@@ -1,5 +1,5 @@
 const router = require('express').Router()
-const {readFromFile, readAndAppend} = require ('../helpers/fsUtils');
+const {readFromFile, readAndAppend, readAndDelete} = require ('../helpers/fsUtils');
 const uuid = require ('../helpers/uuid');
 
 router.get('/notes', (req, res) => {
@@ -12,4 +12,9 @@ router.post('/notes', (req, res) =>{
     res.json('success')
 })
 
-module.exports = router
+router.delete('/notes/:id', (req, res) =>{
+   readAndDelete(req.params.id, './db/db.json')
+   res.json('deleted') 
+})
+
+module.exports = router;
