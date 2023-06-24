@@ -1,6 +1,6 @@
 # Note-pad
 
-This project was built for small business owners to help keep track of their thoughts and help to organize their busy day, by jotting down notes and the ability to save them and then delete when tasks has been completed or note is no longer needed.
+This project was built for small business owners to help keep track of their thoughts and help to organize their busy day, by jotting down notes and the ability to save them and then delete when task has been completed or note is no longer needed.
 
 ### Application Live Link:
 [Note-pad deployed through Heroku](https://note-pad10-ec9ca0bfdfc2.herokuapp.com/)
